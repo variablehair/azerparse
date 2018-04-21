@@ -1,6 +1,9 @@
 import sqlite3
-    
-conn = sqlite3.connect('syncat.db')
+
+DB_PATH = os.path.realpath(
+    os.path.join(os.getcwd(), os.path.dirname(__file__)))
+
+conn = sqlite3.connect(DB_PATH + '/syncat.db')
 c = conn.cursor()
 
 SYNCAT_ORDER = {

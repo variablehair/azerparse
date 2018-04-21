@@ -1,0 +1,164 @@
+{
+    "COP.3SGDIR_i" : "dir",
+    "COP.3SGDIR_u" : "dur",
+    "COP.3SGDIR_ı" : "dır",
+    "COP.3SGDIR_ü" : "dür",
+
+    "until_ə" : "dək",
+    "until_a" : "daq",
+
+    "LOC_ə" : "də",
+    "LOC_a" : "da",
+
+    "ACC_i" : "i", 
+    "ACC_u" : "u", 
+    "ACC_ı" : "ı", 
+    "ACC_ü" : "ü",
+
+    "DAT_ə" : "ə", 
+    "DAT_a" : "a", 
+
+    "ABL_ə" : "dən",
+    "ABL_a" : "dan",
+
+    "VBZ_ə" : "ləş",
+    "VNZ_a" : "laş",
+
+    "ADJ_i"  : "li",
+    "ADJ_u"  : "lu",
+    "ADJ_ı"  : "lı",
+    "ADJ_ü"  : "lü",
+
+    "GEN.3_i" : "in",
+    "GEN.3_u" : "un",
+    "GEN.3_ı" : "ın",
+    "GEN.3_ü" : "ün",
+
+    "GEN.1_i" : "im",
+    "GEN.1_u" : "um",
+    "GEN.1_ı" : "ım",
+    "GEN.1_ü" : "üm",
+
+    "GEN.2_i" : "in",
+    "GEN.2_u" : "un",
+    "GEN.2_ı" : "ın",
+    "GEN.2_ü" : "ün",
+
+    "PTCP.AN_ə" : "ən",
+    "PTCP.AN_a" : "an",
+
+    "NMLZ.MA_ə" : "mə",
+    "NMLZ.MA_a" : "ma",
+
+    "NEG_ə" : "mə",
+    "NEG_a" : "ma",
+
+    "IMP.2PL_i" : "in",
+    "IMP.2PL_u" : "un",
+    "IMP.2PL_ı" : "ın",
+    "IMP.2PL_ü" : "ün",
+
+    "CAUS.T" : "t",
+
+    "CAUS.DIR_i" : "dir",
+    "CAUS.DIR_u" : "dur",
+    "CAUS.DIR_ı" : "dır",
+    "CAUS.DIR_ü" : "dür",
+
+    "PASS.IL_i" : "il",
+    "PASS.IL_u" : "u",
+    "PASS.IL_ı" : "ı",
+    "PASS.IL_ü" : "ü",
+
+    "INF_a" : "a",
+    "INF_ə" : "ə",
+
+    "PST" : "d",
+
+    "EV/PFV_i" : "miş",
+    "EV/PFV_u" : "muş",
+    "EV/PFV_ı" : "mış",
+    "EV/PFV_ü" : "müş",
+
+    "EV2/PFV_i" : "mi",
+    "EV2/PFV_u" : "mu",
+    "EV2/PFV_ı" : "mı",
+    "EV2/PFV_ü" : "mü",
+
+    "PRV_i" : "ib",
+    "PRV_u" : "ub",
+    "PRV_ı" : "ıb",
+    "PRV_ü" : "üb",
+
+    "IMPV_i" : "ir",
+    "IMPV_u" : "ur",
+    "IMPV_ı" : "ır",
+    "IMPV_ü" : "ür",
+
+    "PROS_ə" : "əcək",
+    "PROS_a" : "acaq",
+
+    "FUT.PART_ə" : "əcək",
+    "FUT.PART_a" : "acaq",
+
+    "NFUT.PART_i" : "dik",
+    "NFUT.PART_u" : "duq",
+    "NFUT.PART_ı" : "dıq",
+    "NFUT.PART_ü" : "dük",
+
+    "AOR_ə" : "ər",
+    "AOR_a" : "ar",
+
+    "OPT_ə" : "ə",
+    "OPT_a" : "a",
+
+    "OPT.3SG_i" : "sin",
+    "OPT.3SG_u" : "sun",
+    "OPT.3SG_ı" : "sın",
+    "OPT.3SG_ü" : "sün",
+
+    "NEC_ə" : "məli",
+    "NEC_a" : "malı",
+
+    "POSS.1SG~PST.1SG_i" : "im",
+    "POSS.1SG~PST.1SG_u" : "um",
+    "POSS.1SG~PST.1SG_ı" : "ım",
+    "POSS.1SG~PST.1SG_ü" : "üm",
+    "POSS.2SG~PST.2SG_i" : "in",
+    "POSS.2SG~PST.2SG_u" : "un",
+    "POSS.2SG~PST.2SG_ı" : "ın",
+    "POSS.2SG~PST.2SG_ü" : "ün",
+
+    "POSS.3SG_i" : "i",
+    "POSS.3SG_u" : "u",
+    "POSS.3SG_ı" : "ı",
+    "POSS.3SG_ü" : "ü",
+
+    "POSS.3SG.SI_i" : "si",
+    "POSS.3SG.SI_u" : "su",
+    "POSS.3SG.SI_ı" : "sı",
+    "POSS.3SG.SI_ü" : "sü",
+
+    "PST.3SG_i" : "i",
+    "PST.3SG_u" : "u",
+    "PST.3SG_ı" : "ı",
+    "PST.3SG_ü" : "ü",
+
+    "POSS.1PL_i" : "imiz",
+    "POSS.1PL_u" : "umuz",
+    "POSS.1PL_ı" : "ımız",
+    "POSS.1PL_ü" : "ümüz",
+
+    "PST.1PL_i" : "ik",
+    "PST.1PL_u" : "uq",
+    "PST.1PL_ı" : "ıq",
+    "PST.1PL_ü" : "ük",
+
+    "POSS.2PL~PST.2PL_i" : "iniz",
+    "POSS.2PL~PST.2PL_u" : "unuz",
+    "POSS.2PL~PST.2PL_ı" : "ınız",
+    "POSS.2PL~PST.2PL_ü" : "ünüz",
+    
+    "3PL_ə" : "lər",
+    "3PL_a" : "lar"
+}
