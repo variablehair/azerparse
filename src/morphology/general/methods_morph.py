@@ -1,17 +1,20 @@
 """Contains helper methods pertaining to morphology."""
+import sys, os
+
+THIS_PATH = os.path.realpath(
+    os.path.join(os.getcwd(), os.path.dirname(__file__)))
+
+sys.path.append(THIS_PATH)
 
 import json
 import os
 from classes_morph import Affix
 
-AFFIX_LIST_PATH = os.path.realpath(
-    os.path.join(os.getcwd(), os.path.dirname(__file__)))
+with open(THIS_PATH + '/affixes.json', encoding='utf-8') as f:
+    affix_dict = json.load(f)
 
 def string_to_affix(s):
     """Takes in a string (i.e. 'dir') and returns a list of possible Affix objects. If none, returns []."""
-    with open(AFFIX_LIST_PATH + '/affixes.json', encoding='utf-8') as f:
-        affix_dict = json.load(f)
-    
     ret = []
 
     # Finds the indices of s in values (string lit representation) then appends the corresponding key,
@@ -32,6 +35,4 @@ def string_to_affix(s):
 
 def is_affix(s):
     """Returns true if the input string is found among the list of affixes."""
-    with open(AFFIX_LIST_PATH + '/affixes.json', encoding='utf-8') as f:
-        affix_dict = json.load(f)
     return s in affix_dict.values()
