@@ -1,4 +1,5 @@
 import sqlite3
+import os
 
 DB_PATH = os.path.realpath(
     os.path.join(os.getcwd(), os.path.dirname(__file__)))
