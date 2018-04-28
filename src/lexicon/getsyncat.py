@@ -1,9 +1,14 @@
 import sqlite3
+import os, sys
 
-DB_PATH = os.path.realpath(
+THIS_PATH = os.path.realpath(
     os.path.join(os.getcwd(), os.path.dirname(__file__)))
 
-conn = sqlite3.connect(DB_PATH + '/syncat.db')
+sys.path.append(THIS_PATH)
+
+print(THIS_PATH + '/syncat.db')
+
+conn = sqlite3.connect(THIS_PATH + '/syncat.db')
 c = conn.cursor()
 
 SYNCAT_ORDER = {
@@ -22,7 +27,7 @@ SYNCAT_ORDER = {
 def getsyncat(word):
     """Returns a list of all syntactic categories of the word as strings or an empty list if no results."""
     syncats = ', '.join(list(SYNCAT_ORDER.values()))
-    tup = (word,)
+    tup = (word.upper(),)
 
     c.execute('''SELECT {0} FROM syncat WHERE word=?'''.format(syncats), tup)
     result = c.fetchone()
