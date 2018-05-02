@@ -6,8 +6,6 @@ THIS_PATH = os.path.realpath(
 
 sys.path.append(THIS_PATH)
 
-print(THIS_PATH + '/syncat.db')
-
 conn = sqlite3.connect(THIS_PATH + '/syncat.db')
 c = conn.cursor()
 

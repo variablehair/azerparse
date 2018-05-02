@@ -8,9 +8,7 @@ sys.path.append(THIS_PATH)
 from PyQt5.QtWidgets import QApplication, QWidget, QPushButton, QLineEdit, QLabel, QFrame, QScrollArea
 from PyQt5.QtCore import pyqtSlot, Qt
 
-from lexicon.getsyncat import getsyncat
-from lexicon.findallwords import findallwords
-from morphology.general.genallmorph import genallmorph
+import methods_main
 
 class Azerparse(QWidget):
     def __init__(self):
@@ -47,21 +45,19 @@ class Azerparse(QWidget):
 
     @pyqtSlot()
     def on_lookup_button_click(self):
-        results = {}
-        query = self.lookup_entry_box.text()
-        lex_tups = findallwords(query)
-        for tup in lex_tups:
-            morphs = genallmorph(tup[1])
-            if len(morphs) > 0:
-                results[tup[0]] = morphs
-        
-        str_out = ''
-        for root in results:
-            str_out += ('ROOT = ' + root + '\n')
-            morphs_str = [root + ' + ' + str(x) for x in results[root]]
-            str_out += '\n'.join(morphs_str) + '\n'
-        
-        self.lookup_result_label.setText(str_out)
+        user_input = self.lookup_entry_box.text()
+        user_input = user_input.strip()
+        query_list = user_input.split(' ')
+
+        output_str = ''
+
+        for query in query_list:
+            output_str += (' ##########\t' + query + '\t########## \n\n')
+            single_output = methods_main.process_word(query)
+            output_str += single_output
+            output_str += '\n\n'
+
+        self.lookup_result_label.setText(output_str)
         self.lookup_result_label.adjustSize()
         
 
