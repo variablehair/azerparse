@@ -1,0 +1,7 @@
+Changelog:
+
+0.0.1 (2018 May 31)
+* Created changelog.
+* Removed .exe build stuff. Run [main.py] with Python installed instead.
+* Now allows entries with punctuation (ignores word-initial and -final punc.)
+* Now shows the correct root when an unaffixed root is entered.
