@@ -12,6 +12,8 @@ def process_word(query : str):
         morphs = genallmorph(tup[1])
         if len(morphs) > 0:
             results[tup[0]] = morphs
+        else:
+            results[tup[0]] = []
     
     str_out = ''
     for root in results:
@@ -20,5 +22,3 @@ def process_word(query : str):
         str_out += '\n'.join(morphs_str) + '\n'
 
     return str_out
-    
-

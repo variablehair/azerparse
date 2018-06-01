@@ -7,6 +7,7 @@ sys.path.append(THIS_PATH)
 
 from PyQt5.QtWidgets import QApplication, QWidget, QPushButton, QLineEdit, QLabel, QFrame, QScrollArea
 from PyQt5.QtCore import pyqtSlot, Qt
+import string
 
 import methods_main
 

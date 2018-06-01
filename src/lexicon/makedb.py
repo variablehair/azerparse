@@ -54,6 +54,7 @@ def makein(s):
     if s in verbset:
         ret += 'verb, '
         pos += 1
+        s = s[:-3] # removes infinitive form from verb entry
     if s in adjset:
         ret += 'adjective, '
         pos += 1
